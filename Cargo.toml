@@ -1,0 +1,28 @@
+[package]
+name = "terminal174"
+version = "0.1.0"
+edition = "2021"
+description = "AI-powered terminal that autonomously handles your command-line tasks"
+authors = ["Linh <linhtran17495@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/linhtran174/terminal174"
+documentation = "https://github.com/linhtran174/terminal174#readme"
+keywords = ["ai", "terminal", "cli", "assistant", "automation"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "t174"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1.28", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.7"
+regex = "1.8"
+dirs = "5.0"
+uuid = { version = "1.3", features = ["v4"] }
+async-trait = "0.1"
+anyhow = "1.0"
+colored = "2.0"
